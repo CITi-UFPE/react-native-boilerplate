@@ -16,33 +16,11 @@
         "sourceType": "module"
     },
     "plugins": [
+        "react",
+        "@typescript-eslint",
         "react-hooks"
     ],
     "rules": {
-        "semi": [
-            "error",
-            "always"
-        ],
-        "react-native/no-unused-styles": 2,
-        "react-native/split-platform-components": 2,
-        "react-native/no-inline-styles": 2,
-        "react-native/no-color-literals": 2,
-        "react-native/no-raw-text": 2,
-        "react-native/no-single-element-style-arrays": 2,
-        "@typescript-eslint/explicit-module-boundary-types": "off",
-        "import/prefer-default-export": "off",
-        "camelcase": "off",
-        "@typescript-eslint/ban-types": "off",
-        "linebreak-style": "off",
-        "no-console": "off",
-        "react/prop-types": [
-            2,
-            {
-                "ignore": [
-                    "children"
-                ]
-            }
-        ],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",
         "react/jsx-filename-extension": [
@@ -53,11 +31,6 @@
                 ]
             }
         ],
-        "no-use-before-define": "off",
-        "@typescript-eslint/no-use-before-define": [
-            "error"
-        ],
-        "react/react-in-jsx-scope": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
@@ -65,7 +38,12 @@
                 "ts": "never",
                 "tsx": "never"
             }
-        ]
+        ],
+        "no-use-before-define": "off",
+        "@typescript-eslint/no-use-before-define": [
+            "error"
+        ],
+        "react/react-in-jsx-scope": "off"
     },
     "settings": {
         "import/resolver": {
