@@ -1,27 +1,31 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import {
   useFonts,
   Roboto_100Thin,
   Roboto_400Regular,
-  Roboto_700Bold
+  Roboto_700Bold,
 } from '@expo-google-fonts/roboto';
 
-import AppLoading from 'expo-app-loading';
 import { StatusBar } from 'react-native';
+import * as SplashScreen from 'expo-splash-screen';
 
 import Routes from './src/routes';
+
+SplashScreen.preventAutoHideAsync(); // Keep the splash screen visible while we fetch resources
 
 const App: React.FC = () => {
   const [fontsLoaded] = useFonts({
     Roboto_100Thin,
     Roboto_400Regular,
-    Roboto_700Bold
+    Roboto_700Bold,
   });
 
   if (!fontsLoaded) {
-    return <AppLoading />;
+    return null;
   }
+
+  SplashScreen.hideAsync();
 
   return (
     <>
@@ -29,6 +33,6 @@ const App: React.FC = () => {
       <Routes />
     </>
   );
-}
+};
 
 export default App;
