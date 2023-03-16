@@ -7,6 +7,6 @@ export const ScreenContainer = styled.SafeAreaView`
 export const View = styled.View`
   flex: 1;
   background-color: #FFFFFF;
-  width: '100%',
-  height: '100%'
+  width: 100%;
+  height: 100%;
 `;
