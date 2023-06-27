@@ -1,5 +1,4 @@
 import React from 'react';
-import { Text } from 'react-native';
 import { CitiLogo, Container, CustomText } from './style';
 
 const App: React.FC = () => (

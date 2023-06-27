@@ -11,7 +11,7 @@ export default {
   },
 } as ComponentMeta<typeof Button>;
 
-// eslint-disable-next-line react/jsx-props-no-spreading
+// eslint-disable-next-line react/jsx-props-no-spreading, @typescript-eslint/no-explicit-any
 const Template: ComponentStory<typeof Button> = (args: any) => <Button {...args} />;
 
 export const Primary = Template.bind({});
