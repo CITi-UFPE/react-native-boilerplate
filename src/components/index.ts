@@ -1,7 +1,7 @@
-import Screen from './Screen';
+import ThemeProvider from './ThemeProvider';
 import Button from './Button';
 
 export {
-  Screen,
   Button,
+  ThemeProvider,
 };

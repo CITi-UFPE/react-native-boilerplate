@@ -15,8 +15,8 @@ jobs:
 
     # Installs all the packages
     - name: Install dependencies and packages
-      run: npm install
+      run: yarn install
 
     # Runs the lint script
     - name: Run the lint Script
-      run: npm run lint
+      run: yarn lint
