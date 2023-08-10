@@ -1,4 +1,4 @@
-name: ESLint action
+name: ESLint action and typecheck
 
 on:
   push:
@@ -20,3 +20,7 @@ jobs:
     # Runs the lint script
     - name: Run the lint Script
       run: yarn lint
+      
+    # Runs the typecheck script
+    - name: Run the typecheck Script
+      run: yarn typecheck

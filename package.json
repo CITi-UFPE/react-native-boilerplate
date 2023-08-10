@@ -10,7 +10,8 @@
     "lint:fix": "eslint ./src --ext .tsx --fix",
     "storybook": "start-storybook -p 7007",
     "build-storybook": "build-storybook",
-    "prestorybook": "rnstl"
+    "prestorybook": "rnstl",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@expo-google-fonts/barlow": "^0.2.3",

@@ -1,7 +1,7 @@
 /* eslint-disable import/prefer-default-export */
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
 
-export const ButtonStyled = styled.Button`
+export const ButtonStyled = styled.TouchableOpacity<{ size?: string }>`
   .storybook-button {
     border: 0;
     border-radius: 3em;
@@ -18,16 +18,22 @@ export const ButtonStyled = styled.Button`
     background-color: transparent;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
   }
-  .storybook-button--small {
+  ${({ size }) =>
+    size === "small" &&
+    `
     font-size: 12px;
     padding: 10px 16px;
-  }
-  .storybook-button--medium {
+  `}
+  ${({ size }) =>
+    size === "medium" &&
+    `
     font-size: 14px;
     padding: 11px 20px;
-  }
-  .storybook-button--large {
+  `}
+  ${({ size }) =>
+    size === "large" &&
+    `
     font-size: 16px;
     padding: 12px 24px;
-  }
+  `}
 `;
