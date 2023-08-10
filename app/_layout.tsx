@@ -7,7 +7,10 @@ import {
   Barlow_500Medium,
   Barlow_600SemiBold,
 } from "@expo-google-fonts/barlow";
+import { useCallback } from "react";
 import { ThemeProvider } from "@components";
+
+SplashScreen.preventAutoHideAsync();
 
 export default function Layout() {
   const [fontsLoaded] = useFonts({
@@ -17,12 +20,18 @@ export default function Layout() {
     Barlow_600SemiBold,
   });
 
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
   if (!fontsLoaded) {
-    return <SplashScreen />;
+    return null;
   }
 
   return (
-    <SafeAreaProvider>
+    <SafeAreaProvider onLayout={onLayoutRootView}>
       <ThemeProvider>
         <Slot />
       </ThemeProvider>
