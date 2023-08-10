@@ -1,5 +1,5 @@
-import { citi } from '@assets';
-import styled from 'styled-components/native';
+import styled from "styled-components/native";
+import { citi } from "@assets";
 
 export const CitiLogo = styled(citi)``;
 
