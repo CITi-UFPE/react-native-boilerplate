@@ -14,12 +14,18 @@ importers:
       '@expo-google-fonts/barlow':
         specifier: ^0.2.3
         version: 0.2.3
+      '@react-native/assets-registry':
+        specifier: ^0.75.4
+        version: 0.75.4
       babel-preset-expo:
         specifier: ^11.0.14
         version: 11.0.14(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))
       expo:
         specifier: ~51.0.35
         version: 51.0.35(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2))
+      expo-asset:
+        specifier: ^10.0.10
+        version: 10.0.10(expo@51.0.35(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
       expo-constants:
         specifier: ~16.0.2
         version: 16.0.2(expo@51.0.35(@babel/core@7.25.2)(@babel/preset-env@7.25.4(@babel/core@7.25.2)))
@@ -1313,6 +1319,10 @@ packages:
 
   '@react-native/assets-registry@0.74.87':
     resolution: {integrity: sha512-1XmRhqQchN+pXPKEKYdpJlwESxVomJOxtEnIkbo7GAlaN2sym84fHEGDXAjLilih5GVPpcpSmFzTy8jx3LtaFg==}
+    engines: {node: '>=18'}
+
+  '@react-native/assets-registry@0.75.4':
+    resolution: {integrity: sha512-WX6/LNHwyjislSFM+h3qQjBiPaXXPJW5ZV4TdgNKb6QOPO0g1KGYRQj44cI2xSpZ3fcWrvQFZfQgSMbVK9Sg7A==}
     engines: {node: '>=18'}
 
   '@react-native/babel-plugin-codegen@0.74.87':
@@ -7250,6 +7260,8 @@ snapshots:
       - utf-8-validate
 
   '@react-native/assets-registry@0.74.87': {}
+
+  '@react-native/assets-registry@0.75.4': {}
 
   '@react-native/babel-plugin-codegen@0.74.87(@babel/preset-env@7.25.4(@babel/core@7.25.2))':
     dependencies:
